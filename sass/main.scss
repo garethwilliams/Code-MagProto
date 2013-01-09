@@ -1,0 +1,1364 @@
+@import "compass";
+
+$colour1: #64ccdc;
+$fontStackGotham: Gotham,"Helvetica Neue",Helvetica,Arial,sans-serif;
+$fontStackMuseoSlab: "museo-slab",serif;
+$fontStackProximaNova: "proxima-nova",sans-serif;
+$fontStackProximaNovaAlt: "proxima-nova-alt",sans-serif;
+$selectorArticle : ".article";
+$selectorArticleList: ".article-list";
+$selectorIe9: ".ie9";
+
+@mixin Ie9GradientFix()
+{
+    #{$selectorIe9} &
+    {
+        filter: none;
+    }
+}
+
+/*! normalize.css v1.0.1 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/*
+ * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/*
+ * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3,
+ * and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+ * Addresses `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+/*
+ * Addresses margins handled incorrectly in IE 6/7.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/*
+ * Addresses font sizes and margins set differently in IE 6/7.
+ * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+
+h6 {
+    font-size: 0.75em;
+    margin: 2.33em 0;
+}
+
+/*
+ * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE 6/7/8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+
+p,
+pre {
+    margin: 1em 0;
+}
+
+/*
+ * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/*
+ * Addresses CSS quotes not supported in IE 6/7.
+ */
+
+q {
+    quotes: none;
+}
+
+/*
+ * Addresses `quotes` property not supported in Safari 4.
+ */
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+
+dl,
+menu,
+ol,
+ul {
+    margin: 1em 0;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+/*
+ * Addresses paddings set differently in IE 6/7.
+ */
+
+menu,
+ol,
+ul {
+    padding: 0 0 0 40px;
+}
+
+/*
+ * Corrects list images handled incorrectly in IE 7.
+ */
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improves image quality when scaled in IE 7.
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/*
+ * Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/*
+ * Corrects margin displayed oddly in IE 6/7.
+ */
+
+form {
+    margin: 0;
+}
+
+/*
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 6/7/8/9.
+ * 2. Corrects text not wrapping in Firefox 3.
+ * 3. Corrects alignment displayed oddly in IE 6/7.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers.
+ * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improves appearance and consistency in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+/*
+ * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    *overflow: visible;  /* 4 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ * 3. Removes excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 3+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/*
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+*
+{
+    @include box-sizing(border-box);
+}
+
+ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+li
+{
+    list-style-type: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/******************************
+ * Site header
+ ******************************/
+
+.site-header
+{
+    background-color: #323232;
+    @include filter-gradient(#323232, #f9c0b9, vertical);
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(top,  #323232 0%,#323232 93%,#f16251 95%,#f16251 98%,#f9c0b9 100%));
+    @include Ie9GradientFix();
+    
+    min-height: 57px;
+    padding:
+    {
+        left: 91px;
+        top: 14px;
+    }
+    position: relative;
+}
+
+/********************
+ * Logo and name
+ ********************/
+
+.site-logo
+{
+    $height: 27px;
+    $width: 48px;
+    
+    background:
+    {
+        image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF8AAAA0CAMAAADboRReAAAAY1BMVEWXjYqXjYqXjYqXjYqXjYqXjYqXjYqUioeOhIGXjYqRiIWXjYqPhoOXjYoAAABeWVhqZWNEQkKKgn93cG5RTk1XVFKOhIFkX15LSEeEfHmRh4Q+PTxxa2l+dnQ3NzcxMTGXjYrNIaBkAAAAD3RSTlOPcFAgMIBAs+5gx6DbEAAI0wheAAAC20lEQVR42q2Y2WLjIAxF8R6wmSTejTf+/ysndjMFJAyknftWUo5Ai0GQP2HieZQVjLFespeyLE/C5oXw06i4SaS+iNL/wI9LxcY2yvhX/ISY8Hp9aTKGbiT5KT9mGkc03XN/a24ftVQq8p/wqb70tduBnotUYrmD76dP427RbFhIP+Hnhmfu+4VGPRQlD+XzUmqanvulNn0LPQ3jR72Ob7bTFwD8PdZJTSzx8xMmdS1nLKcJ4ztxRwb62MePewM//UMMiF+/jG/AAI4CgZ43VH8DBPTQ/TR//L4YU6rkmp9W0tRTra8BkRXf+9vMgu7zK37eA/zjNbuVb5k1MGjxGcE0audTCSS2c53KV0pquAUeOlTa+MD175g2+p9Kg7GIWV4aIBivZoKtz2D5yokNnFtxk88ribTAiesXHDpkU0HCBojCQ7Vo490Jh8NHmYkrA0ThoY4kxx7bUTwntU9sgBh46I3VkrA4nLNaCDRw8hUestDgWQQNduRoIxQHX2UOzs4nGpx2C2tQW0JpShQeqFMkM5irY6fIAKHyQqOVL+bRGqkLCCWRk4/VrJ/wM+gfHDW/Fpd/QPq443v5n5u0J9DB58H5+eFOKx5UX1ih9eX9Pgx2IK6JxY73f98CNDi+b77v8xriHvf3GRrA54s/OxeMDzgfO8cG3Ocj45bznUig+pgqPPy773xXor0lcp0b3+y4DLPL+9UN3q98OXpe4MD9ijruh4Vl+uLBP8x+LHXeb6Mebl8VJ9KK77cF99zP0wrfz8faXlj4fh4F9BcZNrANAi9+RvgqDeqPEgZ8fFqoTbPjvgPf91lwfxfriSTad0c6rF821ke7nSPzpHs+CezvcJxXa4u3Dbpr8g/7a54Z/XUL6fNDaElJPf21v8eul3ZWje+ge4bRn75v5KVRDmI9VZtPKOlv3mc4LZQJrILy378v5RmzsSsSh74v+ZXGWcnYG8yKjOZh8/4CWCbhqNISjkwAAAAASUVORK5CYII=);
+        size: $width $height;
+    }
+    height: $height;
+    left: 31px;
+    position: absolute;
+    top: 14px;
+    width: $width;
+}
+
+.site-name
+{
+    color: #ffffff;
+    font:
+    {
+        family: $fontStackGotham;
+        size: 11px;
+        weight: bold;
+    }
+    letter-spacing: .3636em;
+    line-height: 1.2727;
+    margin: 0;
+    text-transform: uppercase;
+    
+    @media only screen and (max-width: 599px)
+    {
+        display: none;
+    }
+}
+
+.site-name-faff
+{
+    position: relative;
+    
+    &:before,
+    &:after
+    {
+        color: #231f20;
+        content: "/";
+        position: absolute;
+    }
+    
+    &:before
+    {
+        left: -.7em;
+    }
+    
+    &:after
+    {
+        right: -.7em;
+    }
+}
+
+.site-name-highlight
+{
+    color: #f16251;
+    display: block;
+}
+
+/******************************
+ * Article List & Article
+ ******************************/
+
+.article-list
+{
+    margin-top: 61px;
+    text-align: center;
+}
+
+.article-preview
+{
+    border-bottom: 1px solid #d4d4d4;
+    display: inline-block;
+    margin:
+    {
+        left: 3%;
+        bottom: 53px;
+        right: 3%;
+    }
+    max-width: 380px;
+    padding-bottom: 1.6875em;
+    text-align: left;
+    vertical-align: top;
+    width: 39%;
+    
+    @media only screen and (max-width: 767px)
+    {
+        max-width: 460px;
+        width: 85%;
+    }
+    
+    @media only screen and (min-width: 1240px)
+    {
+        width: 24%;
+    }
+}
+
+.article-title
+{
+    color: #323232;
+    font:
+    {
+        family: $fontStackMuseoSlab;
+        size: 28px;
+        weight: 700;
+    }
+    line-height: 1.1786;
+    
+    #{$selectorArticleList} &
+    {
+        margin: 0 0 .5357em;
+    }
+    
+    #{$selectorArticle} &
+    {
+        margin: 0 0 .8214em;
+        text-align: center;
+    }
+}
+
+.article-publish-date,
+.article-author
+{
+    font:
+    {
+        family: $fontStackProximaNovaAlt;
+        size: 14px;
+        weight: 600;
+    }
+    padding-left: 1.2143em;
+    position: relative;
+    text-transform: uppercase;
+
+    &:before,
+    &:after
+    {
+        content: "/";
+        position: absolute;
+    }
+    
+    &:after
+    {
+        left: .2857em;
+    }
+    
+    &:before
+    {
+        left: 0;
+    }
+}
+
+.article-publish-date
+{
+    color: #877b77;
+    
+    #{$selectorArticleList} &
+    {
+        display: block;
+        margin-bottom: .5em;
+    }
+    
+    #{$selectorArticle} &
+    {
+        display: inline-block;
+    }
+}
+
+.article-author
+{
+    color: $colour1;
+    
+    #{$selectorArticle} &
+    {
+        display: inline-block;
+    }
+    
+    &:before,
+    &:after
+    {
+        color: #dedede;
+    }
+}
+
+.article-tags
+{
+    margin-bottom: 1.3125em;
+    
+    #{$selectorArticle} &
+    {
+        border:
+        {
+            color: #efefef;
+            style: solid;
+            width: 1px 0;
+        }
+        padding: 13px 30px 18px;
+    }
+}
+
+.article-tag
+{
+    display: inline-block;
+    font:
+    {
+        family: $fontStackProximaNova;
+        size: 13px;
+        weight: bold;
+    }
+    line-height: 1.3077;
+    margin-right: 7px;
+    padding-right: 11px;
+    position: relative;
+    
+    &:last-child
+    {
+        margin-right: -4px;
+        padding-right: 0;
+
+        &:after
+        {
+            display: none;
+        }
+    }
+    
+    & > a
+    {
+        color: $colour1;
+        letter-spacing: .2154em;
+        text-transform: uppercase;
+    }
+    
+    &:after
+    {
+        background-color: #cfcfcf;
+        @include filter-gradient(#cfcfcf, #e1e1e1, horizontal);
+        $experimental-support-for-svg: true;
+        @include background-image(linear-gradient(left,  #cfcfcf 0%,#e1e1e1 100%));
+        @include Ie9GradientFix();
+        
+        bottom: .2941em;
+        content: "";
+        position: absolute;
+        right: 0;
+        top: .1765em;
+        width: 2px;
+    }
+}
+
+.article-image
+{
+    max-width: 100%;
+}
+
+.article-intro
+{
+    color: #333333;
+    font:
+    {
+        family: $fontStackProximaNova;
+        size: 15px;
+    }
+    line-height: 1.7333;
+    padding:
+    {
+        bottom: .0667em;
+        top: .3333em;
+    }
+}
+
+.view-article-link
+{
+    color: #f16251;
+    font:
+    {
+        family: $fontStackProximaNova;
+        size: 14px;
+        weight: bold;
+    }
+    letter-spacing: .2em;
+    padding-left: 41px;
+    position: relative;
+    text-transform: uppercase;
+    vertical-align: middle;
+    
+    &:before
+    {
+        $height: 19px;
+        $width: 33px;
+        
+        background:
+        {
+            image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAAAkCAMAAADhEKeeAAAAY1BMVEXwYVHwYVHwYVHwYVHwYVHrX0/hW0zwYVHwYVHwYVHnXU7kXE3wYVHwYVEAAAD1kof6zsn4urP96+nydWf3pp384d75xL772NTzf3LhW0z2nJL0iX34sKj+9fTxa1z////wYVG5rbGYAAAAD3RSTlOPUIBwILPuMEBgx9ugEAB/whZEAAAB+0lEQVR42o2V6XaDIBBGjcaoqIn7AuLw/k/ZlMM4LFp7/zQ5wes3MwWi9xVZErFSaVgaP+qrdeeGuqhW5VEmz38b8uPxhW9fRI+S4l+GBzPrxSTB0G1G8opvDfnx/AwO7W4cxZ+GJ1OGFnykMD+x7NqQYP37DCAlWHQAwFEfe4YwwD4CzPsAFv1HWoryeWZ40PwmgOn7ZwSD/rpIAKEMax4aInXwAWh0M60ISivkrpDEM9SMBLuEbjdZMAKaW1pWOYa6VMQGINB1RNA0+hMpyJC9lEUHM34cjgiaHmBTRFqjIXP2wEI9N82k6hsYna1SawMKrCIcnf1eDqBtSKUNtSmB3jMrosUIWIZQniIyTSRmbDg20y4dYFCeIkpVYNiUBZd2biyJKKLqxqCEujG8wyom5XNdRfHbSU8x0cQClrNOvn3FQBMLGE6nSYrwPyrs0egKtCFQdNBdCITbhupqZ/HLEDPI/WxnaSo7BC704M4sE/+ESZyw44li0eeGYS3CUy6n/dGiwhPIBb+8srOTtk7tg3JcgkECd08GMtiHLSlg0zHo/pHcq4AMRB0dr5QA0PBePz6MQKEoABlOb61+AhuJUyjz25s3r9DRjmBo+E6397WBcsQ4ll18tkEIZajyu9ufyCJ/069pgfXfGZA6jyvG1m9yxuIiu1z3A+vv4ImkPGowAAAAAElFTkSuQmCC);
+            size: $width $height;
+        }
+        content: "";
+        height: $height;
+        left: 0;
+        margin-top: $height / 2 * -1;
+        position: absolute;
+        top: 50%;
+        width: $width;
+    }
+}
+
+.article
+{
+    @include box-sizing(content-box);
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 30px 8% 0;
+}
+
+.article-byline
+{
+    border:
+    {
+        color: #efefef;
+        style: solid;
+        width: 1px 0;
+    }
+    margin-bottom: 3em;
+    padding:
+    {
+        bottom: .5em;
+        top: .375em;
+    }
+    text-align: center;
+}
+
+.article-share-twitter
+{
+    display: inline-block;
+}
+
+.article-introduction
+{
+    margin-bottom: 2.3125em;
+    
+    > p
+    {
+        color: #877b77;
+        font:
+        {
+            family: $fontStackProximaNova;
+            size: 23px;
+            weight: 300;
+        }
+        line-height: 1.4783;
+        margin: 0;
+    }
+}
+
+.article-main-copy
+{
+    margin-bottom: 49px;
+    
+    > p
+    {
+        color: #333;
+        font:
+        {
+            family: $fontStackProximaNova;
+            size: 19px;
+        }
+        line-height: 1.5263;
+        margin: 0 0 1em;
+        
+        > a
+        {
+            color: $colour1;
+        }
+        
+        + .figure
+        {
+            margin-top: 38px;
+        }
+    }
+    
+    > .figure
+    {
+        margin:
+        {
+            left: auto;
+            right: auto;
+        }
+    }
+    
+    .js & .article-image-wrapper
+    {
+        position: relative;
+        
+        &:after
+        {
+            $height: 25px;
+            $width: 48px;
+            
+            background:
+            {
+                image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAAAxCAMAAAD9VjdmAAADAFBMVEX29vb////+/v7////////////////////////////////z8/P09PTu7u719fXv7+/////////y8vLuTjz71tHyc2T4sqnuSzn0kojtSTf2mpH9/f3z8/P3ta3zeGr6x8LvXk7wXk/70872qKDwYE7++fn4ubH+8O/6z8r72tf70s70j4TuTTzxalz70c395OD++vr4ta3zfG/1kYf3qJ/5wrz4vbf+9fP2m5H6z8v//v3+8vD0hXj1m5D2mI7wY1TxZFX5u7T2mY/zfG7zfXHwYlP4san4sKj72tbzd2n5tKz82NP5uLD2n5X5vLX3qqHxcmT3rqb2oJf6xcD95eL96+n3pp31kYX0in7xZVX84d7wWEj2npT96efvV0X1j4P4qqHxcWPwYVLwYVD70cz0g3fybmD6zsn1kofze27ydGX71tLvU0H3q6P83dr71dD98O7839z6ycT95OLyc2X6xsHycmT6xL70jIH6zcj84N396OX/+fj6xb73rqX4rKTuUD7xbF7vVUP97+z0jYH84NzxaVn+7er85eL73tr//f3vUkHvWknxY1P5wbrxZ1f96Ob+7u3yeWv839vydmj94t7yeWr6wrv0i3/vTz31jID2loz5vrj5tK3zemz95+XwXEzvWEf+7+782dXvW0v2nJLvXEv2pJr84uD+8vH6yMH2nZPwWUnxYlHxZVb2o5n73Nj96uj3p530iHz1lYr4tq70hnnzgnb95uT98O3vVUT+8vH82NTxZlb+8/LzgnT5w7z+9vX97OnzgHPxZ1j/+PjvW0r5wLn0hnrvVEPwZVb+9/b83NjvUD///v/wW0v0f3LycWL97uz1lIj719PvUkD0fnH1joLycGHxbF3xaVrvXUz++vn//fz/+/v++/r97uz4urPycWPybl/vU0L6ysT96ufvV0b0iX3wWUjvVkXxa1zzdWf3pZvxalv71dHwZFT+9PPwW0rwXU3wX07wXEvwYlLwXk3wXk7wYE/wYFDwX0/wXUz4+PjwYVH///9qvtnQAAAAE3RSTlPFZKIyTidcLjZpNNrS/cz2M2fgBbVsBAAABYhJREFUeNrt2GlQE2cYB3B6t9rT3pe0trVSj4oHiCh4X+MtIiKoqCCHICByKQgKEhAJBaTIFcNNpYQIEmEAAxFILAJuQgjhyISA5L6TTbJr0o3RsR8JhJl+8Pm0eXezv/k/s8eTWL076+OZq1lvvPOW1XufzGS99vabVnNmtGZbvW5lmNl6OmemhQ/en2Hh6UcfvhJeCa+E/58w3AJgXEKKJZ9JJLRtIRVPGv4ZtrBQGbByn6tv7+f+YWEZBOp+2/PuMssJ3a34iiXrPXIIXMKoIDwsfG/WRoLbctfdZ92BdssIrMy7a+8LmYcLb9/dSVwi+c2a7epEFz/c67YrAmUB4WJbxYE9pBN9coa3yBoFPFsLph0QkaV9FOaxfUvOyVKmKWDsSulZ1RSNX2xTUUs7yxSqtRVPww3cBAe8Ei7R2qcj/JIk+b72Qd9YlbZ+R2aS/X+SXTTYlIerzyyC5+JiMK1TF/D5VPpVdRW/mr4D47nT9t6LdVnUOD44OVB4DatsFt6PTZ6qIHMv4EqrjsIabOGWG45Ra5bdTWeZ9lTsT/hiW2vXN0xnVSqWn72iGBieklBTniXQKxWQhpfb1RqVx2HWdjqa9jTl6Edx0Xg7t3gerIHRYR5R9lMQKrtEXo+wGp1O8dBrj8wRhx7sUNc1DXUbDCOArfDrL7N2hLizlx3V6HU9lPg6awzLbMEGNyqVa3R6KNXnEPHgWe4RFcwj2bUtRWzrQ/GURgG307GLy1fo9RCsvrowDeg2S0ASuHpd69EjBfKzt0oC9oX1wSBfvNA62GAIKhVfHxzUqj3sW1ZBOgg5Rh4nzSV6dpsl1CAJeiCjADf6sSX5dT5IwxQnmPtRhuFxchXSPJjfn155h7MO1CIpykCpr8NI9+QFWTHOlACpW2MEhxuxm66WIZ6qjz4O1Py0t0+lVstvkgIuBGY/gBFBj3xibphXOXmhohStvwWZhJK42t8rY4XNxjOBR7dfIm6NHOApEe1ab2iT6Lmg16p+lK69MXkhkTrYo9K+ELgYWWD4M0FbJiAfu8+oVp5EujdGj5GUZzwXdArwB2ri5AWAyJXGqdSmLp1ZQ7t3fDt6EMl0EpIKOOJqtQ5ZVz3qPZ24ovB5l2AKOocITF4YakvrfwiZUsCX6RE2tlxBqsZ4JqgjtUSjO4FsKhq5IXgR4zBozAbDSnJ+29DkhdVDqLTIw6YUIN+P3XSglMEHn3UDUkI60wacVxS8QaeDjAnGlMLjyUOrzbrjriAplCXI15W8MI/xRCIJq9DpX5bmCJq+U1aRc1lhvFa1D2qPG5/iZgksVFqu8025Xv+zXExgy1y+ujWoeUmo5YviXbclhZKMgjyuOqEzU5ZipoCkWLlcrO4BleB19G1PezZhsRzWmK4bHdgBOtfRihaUemEVEHyyOaGzYSrPVpanw+34RxMwpO3wjnkSXbCxcYIHG2NA4MSn0sjQISDQH61SpFLE/Z0o1tTeQCkSXCFnM8QbW+wbcSF6CzlD7KwpKynTrRP41IUmXYkgYJFYTOGqGGDK77gWVD6VWRXXqB9wimpImre1noPtizsDcfoDaUuLdpMHJi5PDJICm9qWTmMSsA8tJTPEyjFB3nh6QxP7jq9bba6T6582eM98Aq/jb8Gm/oLo6c0aw0VBoaJ6KYWy2Vs0HgQ4Avh0PFCZhCKW+kNjE4xD6yWerdOeyFg1653IjM3Nc50KTmWmA7/+ke5+mk1laAUba+/8dcUSM1+3/cHk01vyejNGfR5neVPX1tX6PeaMZkTusjvr0sCy2GScfqqgPGHTY8EoqZ6e7S8sXLjiPK3SorP3RUfPc0HFDmnz2fNt8xcE0DJdGmQjM/ELJSX4IMalxWBOfWvmvw4jQ+3twwaz6rvZ/wIjKpdwPDA8zQAAAABJRU5ErkJggg==);
+                size: $width $height;
+            }
+            bottom: 0;
+            content: "";
+            height: $height;
+            left: 0;
+            position: absolute;
+            width: $width;
+        }
+    }
+    
+    .article-image
+    {
+        display: block;
+        margin:
+        {
+            bottom: .75em;
+            left: auto;
+            right: auto;
+        }
+    }
+    
+    .figcaption
+    {
+        color: #888787;
+        font:
+        {
+            family: $fontStackProximaNova;
+            size: 15px;
+            style: italic;
+        }
+        line-height: 1.4667;
+        margin-bottom: 1.8667em;
+    }
+}
+
+.article-quote
+{
+    margin: 46px 40px 0;
+}
+
+.article-quote-quote
+{
+    color: #f16251;
+    font:
+    {
+        family: $fontStackProximaNova;
+        size: 19px;
+        weight: 600;
+    }
+    letter-spacing: .1579em;
+    margin-bottom: .3158em;
+    text-transform: uppercase;
+    
+    &:before
+    {
+        content: "“";
+    }
+    
+    &:after
+    {
+        content: "”";
+    }
+}
+
+.article-quote-source
+{
+    color: #979492;
+    font:
+    {
+        family: $fontStackProximaNova;
+        size: 14px;
+    }
+    margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 1200px)
+{
+    .article
+    {
+        left: 2%;
+        max-width: 1388px;
+        padding:
+        {
+            left: 0;
+            right: 0;
+        }
+        position: relative;
+        width: 90%;
+
+        > .article-introduction,
+        > .article-main-copy,
+        > .article-tags
+        {
+            max-width: 600px;
+            width: 43.3333%;
+        }
+    }
+    
+    .js .pullToSide
+    {
+        left: 50%;
+        position: absolute;
+        right: 0;
+        
+        &.figure
+        {
+            margin:
+            {
+                bottom: 0;
+                top: 0;
+            }
+        }
+        
+        &.fixed
+        {
+            position: fixed;
+        }
+    }
+}

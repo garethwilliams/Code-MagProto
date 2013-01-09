@@ -1,0 +1,1289 @@
+@charset "UTF-8";
+/* normalize.css v1.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/* line 40, ../sass/main.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/*
+ * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/* line 50, ../sass/main.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 61, ../sass/main.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3,
+ * and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+/* line 72, ../sass/main.scss */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 87, ../sass/main.scss */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+ * Addresses `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+/* line 102, ../sass/main.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/*
+ * Addresses margins handled incorrectly in IE 6/7.
+ */
+/* line 110, ../sass/main.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 122, ../sass/main.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+/* line 131, ../sass/main.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses font sizes and margins set differently in IE 6/7.
+ * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+/* line 145, ../sass/main.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 150, ../sass/main.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* line 155, ../sass/main.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 160, ../sass/main.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 165, ../sass/main.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 170, ../sass/main.scss */
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+/*
+ * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+/* line 179, ../sass/main.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+/* line 188, ../sass/main.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 192, ../sass/main.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+/* line 200, ../sass/main.scss */
+dfn {
+  font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE 6/7/8/9.
+ */
+/* line 208, ../sass/main.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+/* line 218, ../sass/main.scss */
+p,
+pre {
+  margin: 1em 0;
+}
+
+/*
+ * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+/* line 229, ../sass/main.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+/* line 239, ../sass/main.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/*
+ * Addresses CSS quotes not supported in IE 6/7.
+ */
+/* line 249, ../sass/main.scss */
+q {
+  quotes: none;
+}
+
+/*
+ * Addresses `quotes` property not supported in Safari 4.
+ */
+/* line 258, ../sass/main.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+/* line 267, ../sass/main.scss */
+small {
+  font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 276, ../sass/main.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 283, ../sass/main.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 287, ../sass/main.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+/* line 302, ../sass/main.scss */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+/* line 306, ../sass/main.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/*
+ * Addresses paddings set differently in IE 6/7.
+ */
+/* line 316, ../sass/main.scss */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/*
+ * Corrects list images handled incorrectly in IE 7.
+ */
+/* line 325, ../sass/main.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improves image quality when scaled in IE 7.
+ */
+/* line 339, ../sass/main.scss */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+/* line 348, ../sass/main.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+/* line 360, ../sass/main.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Corrects margin displayed oddly in IE 6/7.
+ */
+/* line 372, ../sass/main.scss */
+form {
+  margin: 0;
+}
+
+/*
+ * Define consistent border, margin, and padding.
+ */
+/* line 380, ../sass/main.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 6/7/8/9.
+ * 2. Corrects text not wrapping in Firefox 3.
+ * 3. Corrects alignment displayed oddly in IE 6/7.
+ */
+/* line 392, ../sass/main.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers.
+ * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improves appearance and consistency in all browsers.
+ */
+/* line 409, ../sass/main.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/*
+ * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 422, ../sass/main.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+/* line 439, ../sass/main.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+/* line 450, ../sass/main.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ * 3. Removes excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+/* line 462, ../sass/main.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 475, ../sass/main.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 488, ../sass/main.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 3+.
+ */
+/* line 497, ../sass/main.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+/* line 507, ../sass/main.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+/* line 520, ../sass/main.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 541, ../sass/main.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+/* line 545, ../sass/main.scss */
+body {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 556, ../sass/main.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 561, ../sass/main.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 570, ../sass/main.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+/* line 583, ../sass/main.scss */
+img {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 591, ../sass/main.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 601, ../sass/main.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+/* line 609, ../sass/main.scss */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* line 621, ../sass/main.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 626, ../sass/main.scss */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 632, ../sass/main.scss */
+li {
+  list-style-type: none;
+}
+
+/* line 637, ../sass/main.scss */
+a {
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+/* line 649, ../sass/main.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+/* line 657, ../sass/main.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 668, ../sass/main.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 677, ../sass/main.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 694, ../sass/main.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 707, ../sass/main.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 724, ../sass/main.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 729, ../sass/main.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 738, ../sass/main.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 748, ../sass/main.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 756, ../sass/main.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 760, ../sass/main.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 764, ../sass/main.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 774, ../sass/main.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 779, ../sass/main.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 784, ../sass/main.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 789, ../sass/main.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 793, ../sass/main.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 803, ../sass/main.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 809, ../sass/main.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/******************************
+ * Site header
+ ******************************/
+/* line 819, ../sass/main.scss */
+.site-header {
+  background-color: #323232;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF323232', endColorstr='#FFF9C0B9');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMyMzIzMiIvPjxzdG9wIG9mZnNldD0iOTMlIiBzdG9wLWNvbG9yPSIjMzIzMjMyIi8+PHN0b3Agb2Zmc2V0PSI5NSUiIHN0b3AtY29sb3I9IiNmMTYyNTEiLz48c3RvcCBvZmZzZXQ9Ijk4JSIgc3RvcC1jb2xvcj0iI2YxNjI1MSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Y5YzBiOSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #323232), color-stop(93%, #323232), color-stop(95%, #f16251), color-stop(98%, #f16251), color-stop(100%, #f9c0b9));
+  background-image: -webkit-linear-gradient(top, #323232 0%, #323232 93%, #f16251 95%, #f16251 98%, #f9c0b9 100%);
+  background-image: -moz-linear-gradient(top, #323232 0%, #323232 93%, #f16251 95%, #f16251 98%, #f9c0b9 100%);
+  background-image: -o-linear-gradient(top, #323232 0%, #323232 93%, #f16251 95%, #f16251 98%, #f9c0b9 100%);
+  background-image: linear-gradient(top, #323232 0%, #323232 93%, #f16251 95%, #f16251 98%, #f9c0b9 100%);
+  min-height: 57px;
+  padding-left: 91px;
+  padding-top: 14px;
+  position: relative;
+}
+/* line 15, ../sass/main.scss */
+.ie9 .site-header {
+  filter: none;
+}
+
+/********************
+ * Logo and name
+ ********************/
+/* line 840, ../sass/main.scss */
+.site-logo {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF8AAAA0CAMAAADboRReAAAAY1BMVEWXjYqXjYqXjYqXjYqXjYqXjYqXjYqUioeOhIGXjYqRiIWXjYqPhoOXjYoAAABeWVhqZWNEQkKKgn93cG5RTk1XVFKOhIFkX15LSEeEfHmRh4Q+PTxxa2l+dnQ3NzcxMTGXjYrNIaBkAAAAD3RSTlOPcFAgMIBAs+5gx6DbEAAI0wheAAAC20lEQVR42q2Y2WLjIAxF8R6wmSTejTf+/ysndjMFJAyknftWUo5Ai0GQP2HieZQVjLFespeyLE/C5oXw06i4SaS+iNL/wI9LxcY2yvhX/ISY8Hp9aTKGbiT5KT9mGkc03XN/a24ftVQq8p/wqb70tduBnotUYrmD76dP427RbFhIP+Hnhmfu+4VGPRQlD+XzUmqanvulNn0LPQ3jR72Ob7bTFwD8PdZJTSzx8xMmdS1nLKcJ4ztxRwb62MePewM//UMMiF+/jG/AAI4CgZ43VH8DBPTQ/TR//L4YU6rkmp9W0tRTra8BkRXf+9vMgu7zK37eA/zjNbuVb5k1MGjxGcE0audTCSS2c53KV0pquAUeOlTa+MD175g2+p9Kg7GIWV4aIBivZoKtz2D5yokNnFtxk88ribTAiesXHDpkU0HCBojCQ7Vo490Jh8NHmYkrA0ThoY4kxx7bUTwntU9sgBh46I3VkrA4nLNaCDRw8hUestDgWQQNduRoIxQHX2UOzs4nGpx2C2tQW0JpShQeqFMkM5irY6fIAKHyQqOVL+bRGqkLCCWRk4/VrJ/wM+gfHDW/Fpd/QPq443v5n5u0J9DB58H5+eFOKx5UX1ih9eX9Pgx2IK6JxY73f98CNDi+b77v8xriHvf3GRrA54s/OxeMDzgfO8cG3Ocj45bznUig+pgqPPy773xXor0lcp0b3+y4DLPL+9UN3q98OXpe4MD9ijruh4Vl+uLBP8x+LHXeb6Mebl8VJ9KK77cF99zP0wrfz8faXlj4fh4F9BcZNrANAi9+RvgqDeqPEgZ8fFqoTbPjvgPf91lwfxfriSTad0c6rF821ke7nSPzpHs+CezvcJxXa4u3Dbpr8g/7a54Z/XUL6fNDaElJPf21v8eul3ZWje+ge4bRn75v5KVRDmI9VZtPKOlv3mc4LZQJrILy378v5RmzsSsSh74v+ZXGWcnYG8yKjOZh8/4CWCbhqNISjkwAAAAASUVORK5CYII=);
+  background-size: 48px 27px;
+  height: 27px;
+  left: 31px;
+  position: absolute;
+  top: 14px;
+  width: 48px;
+}
+
+/* line 857, ../sass/main.scss */
+.site-name {
+  color: #ffffff;
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: .3636em;
+  line-height: 1.2727;
+  margin: 0;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 599px) {
+  /* line 857, ../sass/main.scss */
+  .site-name {
+    display: none;
+  }
+}
+
+/* line 877, ../sass/main.scss */
+.site-name-faff {
+  position: relative;
+}
+/* line 882, ../sass/main.scss */
+.site-name-faff:before, .site-name-faff:after {
+  color: #231f20;
+  content: "/";
+  position: absolute;
+}
+/* line 889, ../sass/main.scss */
+.site-name-faff:before {
+  left: -0.7em;
+}
+/* line 894, ../sass/main.scss */
+.site-name-faff:after {
+  right: -0.7em;
+}
+
+/* line 900, ../sass/main.scss */
+.site-name-highlight {
+  color: #f16251;
+  display: block;
+}
+
+/******************************
+ * Article List & Article
+ ******************************/
+/* line 910, ../sass/main.scss */
+.article-list {
+  margin-top: 61px;
+  text-align: center;
+}
+
+/* line 916, ../sass/main.scss */
+.article-preview {
+  border-bottom: 1px solid #d4d4d4;
+  display: inline-block;
+  margin-left: 3%;
+  margin-bottom: 53px;
+  margin-right: 3%;
+  max-width: 380px;
+  padding-bottom: 1.6875em;
+  text-align: left;
+  vertical-align: top;
+  width: 39%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 916, ../sass/main.scss */
+  .article-preview {
+    max-width: 460px;
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 1240px) {
+  /* line 916, ../sass/main.scss */
+  .article-preview {
+    width: 24%;
+  }
+}
+
+/* line 944, ../sass/main.scss */
+.article-title {
+  color: #323232;
+  font-family: "museo-slab", serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.1786;
+}
+/* line 955, ../sass/main.scss */
+.article-list .article-title {
+  margin: 0 0 .5357em;
+}
+/* line 960, ../sass/main.scss */
+.article .article-title {
+  margin: 0 0 .8214em;
+  text-align: center;
+}
+
+/* line 968, ../sass/main.scss */
+.article-publish-date,
+.article-author {
+  font-family: "proxima-nova-alt", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 1.2143em;
+  position: relative;
+  text-transform: uppercase;
+}
+/* line 981, ../sass/main.scss */
+.article-publish-date:before, .article-publish-date:after,
+.article-author:before,
+.article-author:after {
+  content: "/";
+  position: absolute;
+}
+/* line 987, ../sass/main.scss */
+.article-publish-date:after,
+.article-author:after {
+  left: .2857em;
+}
+/* line 992, ../sass/main.scss */
+.article-publish-date:before,
+.article-author:before {
+  left: 0;
+}
+
+/* line 998, ../sass/main.scss */
+.article-publish-date {
+  color: #877b77;
+}
+/* line 1002, ../sass/main.scss */
+.article-list .article-publish-date {
+  display: block;
+  margin-bottom: .5em;
+}
+/* line 1008, ../sass/main.scss */
+.article .article-publish-date {
+  display: inline-block;
+}
+
+/* line 1014, ../sass/main.scss */
+.article-author {
+  color: #64ccdc;
+}
+/* line 1018, ../sass/main.scss */
+.article .article-author {
+  display: inline-block;
+}
+/* line 1024, ../sass/main.scss */
+.article-author:before, .article-author:after {
+  color: #dedede;
+}
+
+/* line 1030, ../sass/main.scss */
+.article-tags {
+  margin-bottom: 1.3125em;
+}
+/* line 1034, ../sass/main.scss */
+.article .article-tags {
+  border-color: #efefef;
+  border-style: solid;
+  border-width: 1px 0;
+  padding: 13px 30px 18px;
+}
+
+/* line 1046, ../sass/main.scss */
+.article-tag {
+  display: inline-block;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.3077;
+  margin-right: 7px;
+  padding-right: 11px;
+  position: relative;
+}
+/* line 1060, ../sass/main.scss */
+.article-tag:last-child {
+  margin-right: -4px;
+  padding-right: 0;
+}
+/* line 1065, ../sass/main.scss */
+.article-tag:last-child:after {
+  display: none;
+}
+/* line 1071, ../sass/main.scss */
+.article-tag > a {
+  color: #64ccdc;
+  letter-spacing: .2154em;
+  text-transform: uppercase;
+}
+/* line 1078, ../sass/main.scss */
+.article-tag:after {
+  background-color: #cfcfcf;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFCFCFCF', endColorstr='#FFE1E1E1');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iNTAlIiB4Mj0iMTAwJSIgeTI9IjUwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2NmY2ZjZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2UxZTFlMSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #cfcfcf), color-stop(100%, #e1e1e1));
+  background-image: -webkit-linear-gradient(left, #cfcfcf 0%, #e1e1e1 100%);
+  background-image: -moz-linear-gradient(left, #cfcfcf 0%, #e1e1e1 100%);
+  background-image: -o-linear-gradient(left, #cfcfcf 0%, #e1e1e1 100%);
+  background-image: linear-gradient(left, #cfcfcf 0%, #e1e1e1 100%);
+  bottom: .2941em;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: .1765em;
+  width: 2px;
+}
+/* line 15, ../sass/main.scss */
+.ie9 .article-tag:after {
+  filter: none;
+}
+
+/* line 1095, ../sass/main.scss */
+.article-image {
+  max-width: 100%;
+max-height: 90%;
+}
+
+/* line 1100, ../sass/main.scss */
+.article-intro {
+  color: #333333;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 15px;
+  line-height: 1.7333;
+  padding-bottom: .0667em;
+  padding-top: .3333em;
+}
+
+/* line 1116, ../sass/main.scss */
+.view-article-link {
+  color: #f16251;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: .2em;
+  padding-left: 41px;
+  position: relative;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+/* line 1131, ../sass/main.scss */
+.view-article-link:before {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAAAkCAMAAADhEKeeAAAAY1BMVEXwYVHwYVHwYVHwYVHwYVHrX0/hW0zwYVHwYVHwYVHnXU7kXE3wYVHwYVEAAAD1kof6zsn4urP96+nydWf3pp384d75xL772NTzf3LhW0z2nJL0iX34sKj+9fTxa1z////wYVG5rbGYAAAAD3RSTlOPUIBwILPuMEBgx9ugEAB/whZEAAAB+0lEQVR42o2V6XaDIBBGjcaoqIn7AuLw/k/ZlMM4LFp7/zQ5wes3MwWi9xVZErFSaVgaP+qrdeeGuqhW5VEmz38b8uPxhW9fRI+S4l+GBzPrxSTB0G1G8opvDfnx/AwO7W4cxZ+GJ1OGFnykMD+x7NqQYP37DCAlWHQAwFEfe4YwwD4CzPsAFv1HWoryeWZ40PwmgOn7ZwSD/rpIAKEMax4aInXwAWh0M60ISivkrpDEM9SMBLuEbjdZMAKaW1pWOYa6VMQGINB1RNA0+hMpyJC9lEUHM34cjgiaHmBTRFqjIXP2wEI9N82k6hsYna1SawMKrCIcnf1eDqBtSKUNtSmB3jMrosUIWIZQniIyTSRmbDg20y4dYFCeIkpVYNiUBZd2biyJKKLqxqCEujG8wyom5XNdRfHbSU8x0cQClrNOvn3FQBMLGE6nSYrwPyrs0egKtCFQdNBdCITbhupqZ/HLEDPI/WxnaSo7BC704M4sE/+ESZyw44li0eeGYS3CUy6n/dGiwhPIBb+8srOTtk7tg3JcgkECd08GMtiHLSlg0zHo/pHcq4AMRB0dr5QA0PBePz6MQKEoABlOb61+AhuJUyjz25s3r9DRjmBo+E6397WBcsQ4ll18tkEIZajyu9ufyCJ/069pgfXfGZA6jyvG1m9yxuIiu1z3A+vv4ImkPGowAAAAAElFTkSuQmCC);
+  background-size: 33px 19px;
+  content: "";
+  height: 19px;
+  left: 0;
+  margin-top: -9.5px;
+  position: absolute;
+  top: 50%;
+  width: 33px;
+}
+
+/* line 1151, ../sass/main.scss */
+.article {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 30px 8% 0;
+}
+
+/* line 1159, ../sass/main.scss */
+.article-byline {
+  border-color: #efefef;
+  border-style: solid;
+  border-width: 1px 0;
+  margin-bottom: 3em;
+  padding-bottom: .5em;
+  padding-top: .375em;
+  text-align: center;
+}
+
+/* line 1176, ../sass/main.scss */
+.article-share-twitter {
+  display: inline-block;
+}
+
+/* line 1181, ../sass/main.scss */
+.article-introduction {
+  margin-bottom: 2.3125em;
+}
+/* line 1185, ../sass/main.scss */
+.article-introduction > p {
+  color: #877b77;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 1.4783;
+  margin: 0;
+}
+
+/* line 1199, ../sass/main.scss */
+.article-main-copy {
+  margin-bottom: 49px;
+}
+/* line 1203, ../sass/main.scss */
+.article-main-copy > p {
+  color: #333;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 19px;
+  line-height: 1.5263;
+  margin: 0 0 1em;
+}
+/* line 1214, ../sass/main.scss */
+.article-main-copy > p > a {
+  color: #64ccdc;
+}
+/* line 1219, ../sass/main.scss */
+.article-main-copy > p + .figure {
+  margin-top: 38px;
+}
+/* line 1225, ../sass/main.scss */
+.article-main-copy > .figure {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 1234, ../sass/main.scss */
+.js .article-main-copy .article-image-wrapper {
+  position: relative;
+}
+/* line 1238, ../sass/main.scss */
+.js .article-main-copy .article-image-wrapper:after {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAAAxCAMAAAD9VjdmAAADAFBMVEX29vb////+/v7////////////////////////////////z8/P09PTu7u719fXv7+/////////y8vLuTjz71tHyc2T4sqnuSzn0kojtSTf2mpH9/f3z8/P3ta3zeGr6x8LvXk7wXk/70872qKDwYE7++fn4ubH+8O/6z8r72tf70s70j4TuTTzxalz70c395OD++vr4ta3zfG/1kYf3qJ/5wrz4vbf+9fP2m5H6z8v//v3+8vD0hXj1m5D2mI7wY1TxZFX5u7T2mY/zfG7zfXHwYlP4san4sKj72tbzd2n5tKz82NP5uLD2n5X5vLX3qqHxcmT3rqb2oJf6xcD95eL96+n3pp31kYX0in7xZVX84d7wWEj2npT96efvV0X1j4P4qqHxcWPwYVLwYVD70cz0g3fybmD6zsn1kofze27ydGX71tLvU0H3q6P83dr71dD98O7839z6ycT95OLyc2X6xsHycmT6xL70jIH6zcj84N396OX/+fj6xb73rqX4rKTuUD7xbF7vVUP97+z0jYH84NzxaVn+7er85eL73tr//f3vUkHvWknxY1P5wbrxZ1f96Ob+7u3yeWv839vydmj94t7yeWr6wrv0i3/vTz31jID2loz5vrj5tK3zemz95+XwXEzvWEf+7+782dXvW0v2nJLvXEv2pJr84uD+8vH6yMH2nZPwWUnxYlHxZVb2o5n73Nj96uj3p530iHz1lYr4tq70hnnzgnb95uT98O3vVUT+8vH82NTxZlb+8/LzgnT5w7z+9vX97OnzgHPxZ1j/+PjvW0r5wLn0hnrvVEPwZVb+9/b83NjvUD///v/wW0v0f3LycWL97uz1lIj719PvUkD0fnH1joLycGHxbF3xaVrvXUz++vn//fz/+/v++/r97uz4urPycWPybl/vU0L6ysT96ufvV0b0iX3wWUjvVkXxa1zzdWf3pZvxalv71dHwZFT+9PPwW0rwXU3wX07wXEvwYlLwXk3wXk7wYE/wYFDwX0/wXUz4+PjwYVH///9qvtnQAAAAE3RSTlPFZKIyTidcLjZpNNrS/cz2M2fgBbVsBAAABYhJREFUeNrt2GlQE2cYB3B6t9rT3pe0trVSj4oHiCh4X+MtIiKoqCCHICByKQgKEhAJBaTIFcNNpYQIEmEAAxFILAJuQgjhyISA5L6TTbJr0o3RsR8JhJl+8Pm0eXezv/k/s8eTWL076+OZq1lvvPOW1XufzGS99vabVnNmtGZbvW5lmNl6OmemhQ/en2Hh6UcfvhJeCa+E/58w3AJgXEKKJZ9JJLRtIRVPGv4ZtrBQGbByn6tv7+f+YWEZBOp+2/PuMssJ3a34iiXrPXIIXMKoIDwsfG/WRoLbctfdZ92BdssIrMy7a+8LmYcLb9/dSVwi+c2a7epEFz/c67YrAmUB4WJbxYE9pBN9coa3yBoFPFsLph0QkaV9FOaxfUvOyVKmKWDsSulZ1RSNX2xTUUs7yxSqtRVPww3cBAe8Ei7R2qcj/JIk+b72Qd9YlbZ+R2aS/X+SXTTYlIerzyyC5+JiMK1TF/D5VPpVdRW/mr4D47nT9t6LdVnUOD44OVB4DatsFt6PTZ6qIHMv4EqrjsIabOGWG45Ra5bdTWeZ9lTsT/hiW2vXN0xnVSqWn72iGBieklBTniXQKxWQhpfb1RqVx2HWdjqa9jTl6Edx0Xg7t3gerIHRYR5R9lMQKrtEXo+wGp1O8dBrj8wRhx7sUNc1DXUbDCOArfDrL7N2hLizlx3V6HU9lPg6awzLbMEGNyqVa3R6KNXnEPHgWe4RFcwj2bUtRWzrQ/GURgG307GLy1fo9RCsvrowDeg2S0ASuHpd69EjBfKzt0oC9oX1wSBfvNA62GAIKhVfHxzUqj3sW1ZBOgg5Rh4nzSV6dpsl1CAJeiCjADf6sSX5dT5IwxQnmPtRhuFxchXSPJjfn155h7MO1CIpykCpr8NI9+QFWTHOlACpW2MEhxuxm66WIZ6qjz4O1Py0t0+lVstvkgIuBGY/gBFBj3xibphXOXmhohStvwWZhJK42t8rY4XNxjOBR7dfIm6NHOApEe1ab2iT6Lmg16p+lK69MXkhkTrYo9K+ELgYWWD4M0FbJiAfu8+oVp5EujdGj5GUZzwXdArwB2ri5AWAyJXGqdSmLp1ZQ7t3fDt6EMl0EpIKOOJqtQ5ZVz3qPZ24ovB5l2AKOocITF4YakvrfwiZUsCX6RE2tlxBqsZ4JqgjtUSjO4FsKhq5IXgR4zBozAbDSnJ+29DkhdVDqLTIw6YUIN+P3XSglMEHn3UDUkI60wacVxS8QaeDjAnGlMLjyUOrzbrjriAplCXI15W8MI/xRCIJq9DpX5bmCJq+U1aRc1lhvFa1D2qPG5/iZgksVFqu8025Xv+zXExgy1y+ujWoeUmo5YviXbclhZKMgjyuOqEzU5ZipoCkWLlcrO4BleB19G1PezZhsRzWmK4bHdgBOtfRihaUemEVEHyyOaGzYSrPVpanw+34RxMwpO3wjnkSXbCxcYIHG2NA4MSn0sjQISDQH61SpFLE/Z0o1tTeQCkSXCFnM8QbW+wbcSF6CzlD7KwpKynTrRP41IUmXYkgYJFYTOGqGGDK77gWVD6VWRXXqB9wimpImre1noPtizsDcfoDaUuLdpMHJi5PDJICm9qWTmMSsA8tJTPEyjFB3nh6QxP7jq9bba6T6582eM98Aq/jb8Gm/oLo6c0aw0VBoaJ6KYWy2Vs0HgQ4Avh0PFCZhCKW+kNjE4xD6yWerdOeyFg1653IjM3Nc50KTmWmA7/+ke5+mk1laAUba+/8dcUSM1+3/cHk01vyejNGfR5neVPX1tX6PeaMZkTusjvr0sCy2GScfqqgPGHTY8EoqZ6e7S8sXLjiPK3SorP3RUfPc0HFDmnz2fNt8xcE0DJdGmQjM/ELJSX4IMalxWBOfWvmvw4jQ+3twwaz6rvZ/wIjKpdwPDA8zQAAAABJRU5ErkJggg==);
+  background-size: 48px 25px;
+  bottom: 0;
+  content: "";
+  height: 25px;
+  left: 0;
+  position: absolute;
+  width: 48px;
+}
+/* line 1257, ../sass/main.scss */
+.article-main-copy .article-image {
+  display: block;
+  margin-bottom: .75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 1268, ../sass/main.scss */
+.article-main-copy .figcaption {
+  color: #888787;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.4667;
+  margin-bottom: 1.8667em;
+}
+
+/* line 1282, ../sass/main.scss */
+.article-quote {
+  margin: 46px 40px 0;
+}
+
+/* line 1287, ../sass/main.scss */
+.article-quote-quote {
+  color: #f16251;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: .1579em;
+  margin-bottom: .3158em;
+  text-transform: uppercase;
+}
+/* line 1300, ../sass/main.scss */
+.article-quote-quote:before {
+  content: "“";
+}
+/* line 1305, ../sass/main.scss */
+.article-quote-quote:after {
+  content: "”";
+}
+
+/* line 1311, ../sass/main.scss */
+.article-quote-source {
+  color: #979492;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 14px;
+  margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 1324, ../sass/main.scss */
+  .article {
+    left: 2%;
+    max-width: 1388px;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    width: 90%;
+  }
+  /* line 1338, ../sass/main.scss */
+  .article > .article-introduction,
+  .article > .article-main-copy,
+  .article > .article-tags {
+    max-width: 600px;
+    width: 43.3333%;
+  }
+
+  /* line 1345, ../sass/main.scss */
+  .js .pullToSide {
+    left: 50%;
+    position: absolute;
+    right: 0;
+  }
+  /* line 1351, ../sass/main.scss */
+  .js .pullToSide.figure {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  /* line 1360, ../sass/main.scss */
+  .js .pullToSide.fixed {
+    position: fixed;
+  }
+}
